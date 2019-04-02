@@ -10,49 +10,44 @@
         <body>
         <div class="container">
           <div class="jumbotron">
-            <h2>Transportation Survey</h2>
+            <h2>Are you feeling lucky? Are you, punk??</h2>
           </div>
-          <form id="transportation_survey">
+
+          <form id="fortune_survey">
             <div class="form-group">
-              <p>In the past year, I have used the following modes of transportation to travel to work or school:</p>
-              <input type="checkbox" name="work-transportation" value="bike"> Riding a bike.<br>
-              <input type="checkbox" name="work-transportation" value="car">Driving a car.<br>
-              <input type="checkbox" name="work-transportation" value="carpool">Carpooling with others.<br>
-              <input type="checkbox" name="work-transportation" value="walk">Walking.<br>
-              <input type="checkbox" name="work-transportation" value="bus">Riding the bus.<br>
-              <input type="checkbox" name="work-transportation" value="train">Riding the train.<br>
-              <input type="checkbox" name="work-transportation" value="streetcar">Riding the streetcar.<br>
-              <input type="checkbox" name="work-transportation" value="taxi">Taking a taxi.<br>
-              <input type="checkbox" name="work-transportation" value="rideshare">Using a rideshare service like Lyft or Uber.<br>
-              <input type="checkbox" name="work-transportation" value="skateboard">Skateboarding.<br>
-              <input type="checkbox" name="work-transportation" value="rollerblade">Rollerblading.<br>
-              <input type="checkbox" name="work-transportation" value="scooter">Riding a scooter.<br>
-              <input type="checkbox" name="work-transportation" value="other">Another mode of transportation not listed here.<br>
+              <p>How many of these lucky things happened to you lately?</p>
+              <input type="checkbox" name="luckyEvents" value="lottery">Won a prize<br>
+              <input type="checkbox" name="luckyEvents" value="unicorn">Rode a unicorn<br>
+              <input type="checkbox" name="luckyEvents" value="threesome">Had a three-way<br>
+              <input type="checkbox" name="luckyEvents" value="money">Found money<br>
+              <input type="checkbox" name="luckyEvents" value="first">Flew first class<br>
+              <input type="checkbox" name="luckyEvents" value="date">Went on a hot date<br>
+              <input type="checkbox" name="luckyEvents" value="job">Got a new job<br>
+              <input type="checkbox" name="luckyEvents" value="richWhite">Was born caucasian and/or rich<br>
+              <input type="checkbox" name="luckyEvents" value="cishet">Am a cisgender heterosexual<br>
+              <input type="checkbox" name="luckyEvents" value="dude">Male and able-bodied<br>
             </div>
             <div class="form-group">
-          <p>In the past year, I have used the following modes of transportation to travel to other activities and events:</p>
-          <input type="checkbox" name="fun-transportation" value="bike"> Riding a bike.<br>
-          <input type="checkbox" name="fun-transportation" value="car">Driving a car.<br>
-          <input type="checkbox" name="fun-transportation" value="carpool">Carpooling with others.<br>
-          <input type="checkbox" name="fun-transportation" value="walk">Walking.<br>
-          <input type="checkbox" name="fun-transportation" value="bus">Riding the bus.<br>
-          <input type="checkbox" name="fun-transportation" value="train">Riding the train.<br>
-          <input type="checkbox" name="fun-transportation" value="streetcar">Riding the streetcar.<br>
-          <input type="checkbox" name="fun-transportation" value="taxi">Taking a taxi.<br>
-          <input type="checkbox" name="fun-transportation" value="rideshare">Using a rideshare service like Lyft or Uber.<br>
-          <input type="checkbox" name="fun-transportation" value="skateboard">Skateboarding.<br>
-          <input type="checkbox" name="fun-transportation" value="rollerblade">Rollerblading.<br>
-          <input type="checkbox" name="fun-transportation" value="scooter">Riding a scooter.<br>
-          <input type="checkbox" name="fun-transportation" value="other">Another mode of transportation not listed here.<br>
+          <p>Click on all the unlucky things that happened lately:</p>
+          <input type="checkbox" name="unluckyEvents" value="broken">Broke a mirror<br>
+          <input type="checkbox" name="unluckyEvents" value="sick">Got sick<br>
+          <input type="checkbox" name="unluckyEvents" value="lostPhone">Lost phone<br>
+          <input type="checkbox" name="unluckyEvents" value="umbrella">Opened umbrella indoors<br>
+          <input type="checkbox" name="unluckyEvents" value="argue">Argued your Republican uncle on social media<br>
+          <input type="checkbox" name="unluckyEvents" value="femme">Was a woman while playing an MMO<br>
+
         </div>
            <button type="submit">Submit Survey</button>
           </form>
-          <span id="work-responses">
-            <p><strong>You use the following methods of transportation to travel to work or school:</strong></p>
+          <div id="luckyResut">
+          <span id="luckyOutput">
+            <p><strong>You're exceptionally lucky!</strong></p>
           </span>
           <br>
-          <span id="fun-responses">
-            <p><b>You use the following methods of transportation to travel to work or school:</b></p>
+        </div>
+        <div id="unluckyResult">
+          <span id="unluckyOutput">
+            <p><b>You aren't very lucky, are you? Have you considered being born rich and white?</b></p>
             <p> </p>
           </span>
         </div>

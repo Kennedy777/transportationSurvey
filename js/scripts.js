@@ -1,13 +1,13 @@
 $(document).ready(function() {
-  $("form#transportation_survey").submit(function(event){
+  $("form#fortune_survey").submit(function(event){
     event.preventDefault();
-    $("#work-responses").show();
-    $("input:checkbox[name=work-transportation]:checked").each(function(){
-      var workTransportationMode = $(this).val();
-      $("#work-responses").append(workTransportationMode + "<br");
-      $("fun-responses").show();
-      $("input:checkbox[name=fun-transportation]:checked").each(function){
-        var funTransportationMode =($this).val();
-        $("#fun-responses").append(funTransportationMode + "<br>");
+    $("#luckyOutput").show();
+    $("input:checkbox[name=luckyEvents]:checked").each(function(){
+      var luckyOutput = $(this).val();
+      $("#lucky-responses").append(luckyOutput + "<br>");
+      $("unlucky-responses").show();
+      $("input:checkbox[name=unluckyEvents]:checked").each(function){
+        var unluckyOutput =($this).val();
+        $("unluckyOutput").append(unluckyOutput + "<br>");
       });
   });
